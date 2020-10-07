@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminKategoriProduk">
+
+    <TextView
+        android:id="@+id/judul_Halaman"
+        android:layout_marginVertical="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORI PRODUK"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/judul_Halaman"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/backgroundcard"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:id="@+id/produk_Boba"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/boba"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOBA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/backgroundcard"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:id="@+id/produk_Camilan"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jajanan"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAMILAN"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/backgroundcard"
+            android:padding="8dp"
+            android:layout_marginVertical="4dp"
+            android:id="@+id/produk_Susu"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/milk"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUSU"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"/>
+
+
+
+</RelativeLayout>

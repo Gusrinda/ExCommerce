@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminTambahProduk">
+
+
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/pendaftaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH PRODUK"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/font1"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_below="@+id/pendaftaran"
+        android:layout_marginVertical="12dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nama_Halaman"
+        android:textColor="@color/font1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman kategori apa ?"/>
+
+    <TextView
+        android:id="@+id/deksripsiHalaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi form dibawah untuk menambahkan produk"
+        android:textSize="12dp"
+        android:textColor="@color/font1"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/nama_Halaman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/deksripsiHalaman"
+        android:id="@+id/layoutDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaProduk"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_namaProduk"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Produk"
+                android:textColor="@color/font1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/deksripsiProduk"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1"
+            app:counterMaxLength="255"
+            app:counterEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_deksripsiProduk"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deksripsi Produk"
+                android:textColor="@color/font1"
+                android:scrollbars="vertical"
+                android:maxLines="2"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/hargaProduk"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_hargaProduk"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga Produk"
+                android:textColor="@color/font1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginVertical="16dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Foto" />
+
+            <ImageView
+                android:id="@+id/foto_Produk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/backgroundimage"
+                android:padding="8dp"
+                android:src="@drawable/empty" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/layoutDaftar"
+        android:id="@+id/btn_tambahProduk"
+        android:layout_marginRight="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH PRODUK"
+        android:textColor="@color/font2"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:background="@color/macanBoba3"/>
+
+</RelativeLayout>

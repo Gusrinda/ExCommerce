@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/macanBoba1"
+        />
+
+    <ImageView
+        android:id="@+id/LogoMacan"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:src="@drawable/macan"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/pendaftaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PENDAFTARAN"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/font1"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/LogoMacan"
+    android:layout_centerHorizontal="true"
+/>
+
+    <TextView
+        android:id="@+id/memberBoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Macan Boba Cheese"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/font1"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/pendaftaran"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/memberBoba"
+        android:id="@+id/layoutDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaPelanggan"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_namaPelanggan"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pelanggan"
+                android:textColor="@color/font1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nomorHandphonePelanggan"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_nomorHandphonePelanggan"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Handphone Pelanggan"
+                android:textColor="@color/font1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/alamatPelanggan"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/font1"
+            app:counterMaxLength="255"
+            app:counterEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_alamatPelanggan"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Pelanggan"
+                android:textColor="@color/font1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordPelanggan"
+            android:layout_width="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/font1"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/font1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/txt_passwordPelanggan"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/font1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/layoutDaftar"
+        android:id="@+id/btn_Daftar"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:textColor="@color/font2"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:background="@color/macanBoba3"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/btn_Daftar"
+        android:id="@+id/btn_punyaAkun"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font1"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:text="Sudah punya Akun,  Masuk disini"/>
+</RelativeLayout>

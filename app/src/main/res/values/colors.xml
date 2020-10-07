@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#939393</color>
+    <color name="colorAccent">#ED6A97</color>
+
+    <color name="macanBoba1">#FF9800</color>
+    <color name="macanBoba2">#FF6600</color>
+    <color name="macanBoba3">#352001</color>
+
+    <color name="font1">#000000</color>
+    <color name="font2">#FFFFFF</color>
+
+</resources>

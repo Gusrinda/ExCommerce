@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "108575438625",
+    "firebase_url": "https://excommerce-ece2a.firebaseio.com",
+    "project_id": "excommerce-ece2a",
+    "storage_bucket": "excommerce-ece2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108575438625:android:3210c78195fecc79ac3060",
+        "android_client_info": {
+          "package_name": "com.gusrinda.excommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108575438625-4m2tgomfj7cfjkiqk3m2r1d4qbnqv0kp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gusrinda.excommerce",
+            "certificate_hash": "de7301c35d99e3f02726d9fc08602b0efaee86e2"
+          }
+        },
+        {
+          "client_id": "108575438625-gnss8p36h75c86qj1qmbb5sgjkl9qoig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_wQlfAQfagEVQ7LGwE-KVZNxSNUs09uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108575438625-gnss8p36h75c86qj1qmbb5sgjkl9qoig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
